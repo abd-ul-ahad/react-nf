@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles.module.css'
+import Footer from './Components/Footer'
+import Div from './Components/Div'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { Footer };
+export { Div };
