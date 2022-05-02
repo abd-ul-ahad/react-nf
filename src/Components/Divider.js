@@ -1,8 +1,14 @@
 import React from 'react';
 
-export default function Divider({ className, color }) {
+export default function Divider({ className, color, thickness, lineStyle}) {
     let style = {
-        borderTop: `1px solid ${color}`
+        borderTop: `${thickness} ${lineStyle} ${color}`
     }
     return <hr style={style} className={className} />;
 };
+
+Divider.defaultProps = {
+    thickness: "1px",
+    lineStyle: 'solid',
+    color: "black"
+}

@@ -7,11 +7,9 @@ export default function Item({ children, className, color, py, px, my, mx, href 
     let aStyle = {
         color: color,
         textDecoration: "none",
-        margin: `${my} ${mx}` 
-}
-return (
-    <li style={style} className={className}><a href={href} style={aStyle} >{children}</a></li>
-);
+        margin: `${my} ${mx}`
+    }
+    return <li style={style} className={className}><a href={href} style={aStyle} >{children}</a></li>;
 };
 
 Item.defaultProps = {
