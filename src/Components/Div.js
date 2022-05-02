@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function Div({ children, className, col, variant, content  }) {
+export default function Div({ children, className, width, variant, content  }) {
     let style = {
         display: 'flex',
         justifyContent: content,
         alignItems: 'center',
         flexDirection: variant,
-        width: `${col}%`
+        width: `${width}%`
     }
     return (
         <div style={style} className={className} >{children}</div>
@@ -14,7 +14,7 @@ export default function Div({ children, className, col, variant, content  }) {
 };
 
 Div.defaultProps = {
-    col: 100,
+    width: 100,
     variant: 'row',
     justifyContent: 'center',
 };

@@ -6,7 +6,5 @@ export default function Text({ children, className, bg, color, float }) {
         color: color,
         textAlign: float
     }
-    return (
-        <p style={style} className={className} >{children}</p>
-    );
+    return <p style={style} className={className} >{children}</p>;
 };

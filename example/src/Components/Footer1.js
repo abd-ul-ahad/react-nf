@@ -16,12 +16,10 @@ const Footer1 = () => {
                     <Div content="flex-start">
                         <Footer.Text>Copyright &copy; Developers</Footer.Text>
                     </Div>
-                    <Div content="flex-end">
-                        <Footer.List>
+                        <Footer.List content="flex-end">
                             <Footer.Item>Home</Footer.Item>
                             <Footer.Item>About</Footer.Item>
                         </Footer.List>
-                    </Div>
                 </Footer.Div>
             </Footer>
         </>
