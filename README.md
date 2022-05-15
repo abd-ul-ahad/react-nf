@@ -12,18 +12,7 @@ npm install --save react-nf
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
 
-import MyComponent from 'react-nf'
-import 'react-nf/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
 
 ## License
 
